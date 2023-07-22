@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
 const { ApiPromise, WsProvider } = require('@polkadot/api');
-const { bnToBn } = require('@polkadot/util/bn');
-const { stringToU8a } = require('@polkadot/util');
+const { bnToBn, stringToU8a } = require('@polkadot/util');
 const { u128 } = require('@polkadot/types');
 const { Mainnet } = require('@edgeware/node-types');
 
 module.exports = async (req, res) => {
-  const nodeUrl = 'ws://mainnet1.edgewa.re:9944';
+  const nodeUrl = 'ws://mainnet2.edgewa.re:9944';
 
   console.log(`Connecting to API for ${nodeUrl}...`);
   let connected;
