@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
     res.setHeader('content-type', 'text/plain');
     res.status(500).send('Connection timed out');
     process.exit(1);
-  }, 2000);
+  }, 10000);
 
   // initialize the api
   const api = await ApiPromise.create({
