@@ -2,3 +2,5 @@
 
 .now
 .vercel
+.DS_Store
+**/.DS_Store
